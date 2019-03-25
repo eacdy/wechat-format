@@ -14,8 +14,7 @@ var defaultTheme = {
       'font-size': '140%',
       'text-align': 'center',
       'font-weight': 'normal',
-      'text-align': 'center',
-      'margin': '80px 10px 40px 10px'
+      'margin': '40px 10px 20px 10px'
     },
     h3: {
       'font-weight': 'bold',
