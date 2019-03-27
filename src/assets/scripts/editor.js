@@ -49,6 +49,7 @@ var app = new Vue({
       if (this.wxRenderer.hasFootnotes()) {
         output += this.wxRenderer.buildFootnotes()
       }
+      output += '<small style="text-align: right;display:block">点"在看"是一种美德^_^</small>';
       return output
     },
     themeChanged: function () {

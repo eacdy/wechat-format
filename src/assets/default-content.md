@@ -29,3 +29,4 @@
 
 ## 关注我
 
+![都是干货！](http://www.itmuch.com/images/miniapp/wx-xcx.png)
