@@ -45,11 +45,15 @@ var app = new Vue({
   },
   methods: {
     renderWeChat: function (source) {
-      var output = marked(source, { renderer: this.wxRenderer.getRenderer() })
+      var output = '<small style="text-align: center;display:block; color: #3f3f3f;">点击上方 <b style="color: rgb(0, 82, 255);">IT牧场</b> ，选择 <b style="color: rgb(0, 82, 255);">置顶或者星标</b></small>\n' +
+          '<small style="text-align: center;display:block; color: #3f3f3f;">技术干货每日送达！</small><br>';
+
+
+          output = output + marked(source, { renderer: this.wxRenderer.getRenderer() })
       if (this.wxRenderer.hasFootnotes()) {
         output += this.wxRenderer.buildFootnotes()
       }
-      output += '<small style="text-align: right;display:block">点"在看"是一种美德^_^</small>';
+      output += '<small style="text-align: right; display:block; color: rgb(0, 82, 255); font-weight: bold">点"在看"是一种美德^_^</small>';
       return output
     },
     themeChanged: function () {

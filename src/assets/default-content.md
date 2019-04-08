@@ -1,7 +1,3 @@
-<small style="text-align: center;display:block">点击上方 `IT牧场` ，选择 `置顶或者星标` </small>
-<small style="text-align: center;display:block">您的关注意义重大！</small><br>
-
-
 
 正文
 
