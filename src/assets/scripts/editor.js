@@ -53,7 +53,7 @@ var app = new Vue({
       if (this.wxRenderer.hasFootnotes()) {
         output += this.wxRenderer.buildFootnotes()
       }
-      output += '<small style="text-align: right; display:block; color: rgb(0, 82, 255); font-weight: bold">点"在看"是一种美德^_^</small>';
+      output += '<small style="text-align: right; display:block; color: rgb(0, 82, 255); font-weight: bold">喜欢就点个"在看"呗^_^</small>';
       return output
     },
     themeChanged: function () {
