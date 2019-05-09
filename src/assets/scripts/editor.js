@@ -61,7 +61,7 @@ var app = new Vue({
             if (this.wxRenderer.hasFootnotes()) {
                 output += this.wxRenderer.buildFootnotes()
             }
-            output += '<a href="https://mp.weixin.qq.com/s?__biz=MzI4ODQ3NjE2OA==&mid=2247484896&idx=2&sn=5411222a8b1ebc698f8afdc905abf88e&chksm=ec3c9887db4b119181692ed0b5193929df8ec4672acf418ab283327ec8a33dba09c073183d65&token=2007662448&lang=zh_CN#rd" style="text-align: center;display:block; text-decoration: underline;font-weight: bold;line-height: 200%;"><small>>>>技术讨论群<<<</small></a>'
+            output += '<a href="https://mp.weixin.qq.com/s?__biz=MzI4ODQ3NjE2OA==&mid=2247484896&idx=2&sn=5411222a8b1ebc698f8afdc905abf88e&chksm=ec3c9887db4b119181692ed0b5193929df8ec4672acf418ab283327ec8a33dba09c073183d65&scene=21#wechat_redirect" style="text-align: center;display:block; text-decoration: underline;font-weight: bold;line-height: 200%;">>>>技术讨论群<<<</a>'
             output += '<small style="text-align: right; display:block; color: rgb(0, 82, 255); font-weight: bold">喜欢就点个"在看"呗^_^</small>';
             return output
         },
