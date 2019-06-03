@@ -53,7 +53,7 @@ var app = new Vue({
     },
     methods: {
         renderWeChat: function (source) {
-            var output = '<small style="text-align: center;display:block; color: #3f3f3f;">点击上方 <b style="color: rgb(0, 82, 255);">IT牧场</b> ，选择 <b style="color: rgb(0, 82, 255);">置顶或者星标</b></small>\n' +
+            var output = '<small style="text-align: center;display:block; color: #3f3f3f;">点击上方<b style="color: rgb(0, 82, 255);">"IT牧场"</b>，选择<b style="color: rgb(0, 82, 255);">"置顶或者星标"</b></small>\n' +
                 '<small style="text-align: center;display:block; color: #3f3f3f;">技术干货每日送达！</small><br>';
 
 
@@ -61,8 +61,12 @@ var app = new Vue({
             if (this.wxRenderer.hasFootnotes()) {
                 output += this.wxRenderer.buildFootnotes()
             }
+            output += '<hr style="border-style: solid;border-width: 1px 0 0;border-color: rgba(0,0,0,0.1);-webkit-transform-origin: 0 0;-webkit-transform: scale(1, 0.5);transform-origin: 0 0;transform: scale(1, 0.5);"/>';
+            output += '<small style="text-align:center;display: block; color:rgb(136, 136, 136);">想知道更多？长按/扫码关注我吧↓↓↓</small>'
+            output += '<img src="http://www.itmuch.com/icons/wx.jpg" style="text-align: center;display:block; margin: 0 auto; width: 45%;"/>';
             output += '<a href="https://mp.weixin.qq.com/s?__biz=MzI4ODQ3NjE2OA==&mid=2247484896&idx=2&sn=5411222a8b1ebc698f8afdc905abf88e&chksm=ec3c9887db4b119181692ed0b5193929df8ec4672acf418ab283327ec8a33dba09c073183d65&scene=21#wechat_redirect" style="text-align: center;display:block; text-decoration: underline;font-weight: bold;line-height: 200%;">>>>技术讨论群<<<</a>'
-            output += '<small style="text-align: right; display:block; color: rgb(0, 82, 255); font-weight: bold">喜欢就点个"在看"呗^_^</small>';
+            output += '<small style="text-align: right; display:block;  font-weight: bold">喜欢就点个' +
+                '<span style="color: rgb(0, 82, 255);">"在看"</span>呗^_^</small>';
             return output
         },
         themeChanged: function () {
