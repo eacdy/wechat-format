@@ -53,7 +53,7 @@ var app = new Vue({
     },
     methods: {
         renderWeChat: function (source) {
-            var output = '<small style="text-align: center;display:block; color: #3f3f3f;">点击上方<b style="color: rgb(0, 82, 255);">"IT牧场"</b>，选择<b style="color: rgb(0, 82, 255);">"置顶或者星标"</b></small>\n' +
+            var output = '<small style="text-align: center;display:block; color: #3f3f3f;">点击上方<b style="color: rgb(0, 82, 255);">"IT牧场"</b>，选择<b style="color: rgb(0, 82, 255);">"设为星标"</b></small>\n' +
                 '<small style="text-align: center;display:block; color: #3f3f3f;">技术干货每日送达！</small><br>';
 
 
